@@ -1,0 +1,98 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Lugrasimo", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 5vw;
+
+}
+
+header > p{
+    padding-bottom: 50px;
+    font-size: 2vw;
+
+}
+
+a{
+    color: beige;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: rgb(255, 0, 212);
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(77, 77, 78, 0.445);
+    color: rgb(245, 245, 220);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.801);
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.329);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.973);
+}
+
+section#img1{
+    
+    background: url(imagens/ceu.jpg) bottom center no-repeat fixed;
+    background-size: cover;
+}
+
+section#img2{
+    background: url(imagens/livro.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+} 
